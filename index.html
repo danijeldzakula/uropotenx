@@ -49,8 +49,6 @@
             var isJsonEnable=false;
 
             var text_item_is_free='бесплатно';
-
-            //var KMAText={'validation_name':'Укажите корректные ФИО.','validation_phone1':'Номер телефона может содержать только цифры, символы \"+\", \"-\", \"(\", \")\" и пробелы.','validation_phone2':'В вашем телефоне слишком мало цифр.','validation_phone3':'В вашем телефоне слишком много цифр.','comebacker_text':'ВНИМАНИЕ'};
         </script>
         
         <script src="./js/custom-functions2.min.js"></script>
@@ -62,9 +60,14 @@
                 KMA.checkAndSetCountryField(country);
                 KMA.changeDataCountry(country);
                 KMA.changeDataNotCountry(country);
-                //KMA.validateAndSendForm(isJsonEnable,KMAText);
             });
         </script>
+
+        <style type="text/css">
+            .wrapper {
+                overflow-y: hidden;
+            }
+        </style>
     
     </head>
     <body>

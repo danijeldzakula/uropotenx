@@ -18,6 +18,7 @@
 .__footer p {
     display: block;
     margin-bottom: 0;
+    color: silver;
 }
 .__footer p a {
     text-decoration: none;
