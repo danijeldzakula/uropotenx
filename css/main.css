@@ -455,20 +455,40 @@ section {
 .s6-card-img2,
 .s6-card-img3,
 .s6-card-img4 {
+    position: relative;
     height: 140px;
     width: 140px;
+    border-radius: 50%;
 }
+.s6-card-img1::after,
+.s6-card-img2::after,
+.s6-card-img3::after,
+.s6-card-img4::after {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    left: -6px;
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    content: '';
+    clear: both;
+    display: block;
+    border: 2px solid var(--blue-color);
+    border-radius: 50%;
+}
+
 .s6-card-img1 {
-    background: url(../img/xs6-card1.png.pagespeed.ic.ttjlKrYBEH.webp) center no-repeat;
+    background: url(../img/preslica.jpg) center no-repeat;
 }
 .s6-card-img2 {
-    background: url(../img/xs6-card2.png.pagespeed.ic.l8DbxIJmdC.webp) center no-repeat;
+    background: url(../img/rastavic.jpg) center no-repeat;
 }
 .s6-card-img3 {
-    background: url(../img/xs6-card3.png.pagespeed.ic.oP8oVxBtQ8.webp) center no-repeat;
+    background: url(../img/ivanjsko-cvece.jpg) center no-repeat;
 }
 .s6-card-img4 {
-    background: url(../img/xs6-card4.png.pagespeed.ic.euYtjQ2Iit.webp) center no-repeat;
+    background: url(../img/kantarion.jpg) center no-repeat;
 }
 .s6-card-title {
     margin-top: 30px;
